@@ -22,6 +22,7 @@ footer{
 
 body{
     background-color: white;
+    justify-content: center;
 }
 
 /* Color Palette:  
@@ -29,3 +30,4 @@ Light Green: #65fa72
 Light Blue: #87e7f2
 Aqua: #78efbf
 */
+
