@@ -12,7 +12,7 @@ header{
 footer{
     display: flex;
     position: absolute;
-    bottom: 0;
+    margin-bottom: 0;
     left: 0;
     background-color: #87e7f2;
     width: 100%;

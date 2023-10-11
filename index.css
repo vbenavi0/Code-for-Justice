@@ -1,0 +1,118 @@
+main{
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+#img1{
+    width: 50%;
+}
+
+#sec1{
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    background-color: #78efbf;
+}
+
+#who{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid black;
+    padding: 2px;
+}
+
+h2{
+    border-bottom: 2px solid black;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+}
+
+#form1{
+    display: block;
+    justify-content: center;
+    margin: 0;
+}
+
+.join{
+    display: inline-block;
+    width: 300px;
+    color: black;
+    background-color: #87e7f2 ;
+    border: 2px solid black;
+    font-size: 15px;
+    padding: 10px;
+    margin: 5px;
+}
+
+#joinBut{
+    display: inline-block;
+    width: 200px;
+    color: black;
+    background-color: #65fa72 ;
+    border: 2px solid black;
+    font-size: 15px;
+    padding: 5px;
+    margin: 5px;
+    align-self: center;
+}
+
+input::placeholder{
+    color: black;
+}
+
+#sec2{
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-color: #78efbf;
+    margin: 0;
+    text-align: center;
+}
+
+#foci{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    background-color: #78efbf;
+    text-align: center;
+}
+
+.focus{
+    width: 20%;
+    height: auto;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.fImg{
+    width: 80%;
+    height: 50%;
+}
+
+#sec3{
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-color: #78efbf;
+    margin: 0;
+    text-align: center;
+}
+
+#extra{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid black;
+}
+
+#sec4{
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    background-color: #78efbf;
+}
