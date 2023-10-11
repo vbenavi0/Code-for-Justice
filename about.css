@@ -1,0 +1,36 @@
+h1 {
+    text-align: center;
+    padding: 60px; 
+}
+
+.paragraphs {
+    color: red;
+}
+
+.ourteam {
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+
+.team {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+img {
+
+
+}
+
+
+.footer {
+    position: absolute;
+    margin-bottom: 50px;
+}
