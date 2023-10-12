@@ -1,4 +1,4 @@
-header{
+header {
     display: flex;
     position: absolute;
     top: 0;
@@ -9,7 +9,7 @@ header{
     align-items: center;
 }
 
-footer{
+footer {
     display: flex;
     position: absolute;
     margin-bottom: 0;
@@ -20,13 +20,7 @@ footer{
     justify-content: center;
 }
 
-body{
+body {
+    background-color: white;
     justify-content: center;
 }
-
-/* Color Palette:  
-Light Green: #65fa72 
-Light Blue: #87e7f2
-Aqua: #78efbf
-*/
-
