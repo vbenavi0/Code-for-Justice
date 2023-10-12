@@ -1,0 +1,251 @@
+/* Color Palette:  
+Light Green: #65fa72 
+Light Blue: #87e7f2
+Aqua: #78efbf
+*/
+
+/*Making a simply grid for the Picture Page*/
+.galleryheader {
+    position: absolute;
+    top: 100px;
+    left: 150px;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.galleryheader2 {
+    position: absolute;
+    top: 100px;
+    left: 150px;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.section_picture {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+
+}
+
+
+.container_picture {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+img:hover {
+    filter: blur(15px);
+    object-fit: cover;
+    opacity: 0.4;
+    /* Adjust the value to control the amount of blurriness */
+}
+
+
+
+/* .hover-text1 {
+    position: absolute;
+    top: 400px;
+    margin-left: 130px;
+    color: white;
+} */
+
+.hover-text1,
+.hover-text2,
+.hover-text3,
+.hover-text4 {
+    position: absolute;
+    top: 400px;
+    margin-left: 130px;
+    color: black;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.hover-text1,
+.hover-text2,
+.hover-text3,
+.hover-text4 {
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top: 300px;
+    margin-left: 80px;
+
+}
+
+.hover-text5,
+.hover-text6,
+.hover-text7,
+.hover-text8 {
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    bottom: 300px;
+    margin-left: 80px;
+}
+
+.hover-text5,
+.hover-text6,
+.hover-text7,
+.hover-text8 {
+    position: absolute;
+    bottom: 60px;
+    margin-left: 130px;
+    color: black;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card1:hover .hover-text1 {
+    opacity: 1;
+    /* Make the text visible when hovering over the image container */
+}
+
+.card2:hover .hover-text2 {
+    opacity: 1;
+
+}
+
+.card3:hover .hover-text3 {
+    opacity: 1;
+
+}
+
+.card4:hover .hover-text4 {
+    opacity: 1;
+
+}
+
+.card5:hover .hover-text5 {
+    opacity: 1;
+
+}
+
+.card6:hover .hover-text6 {
+    opacity: 1;
+
+}
+
+.card7:hover .hover-text7 {
+    opacity: 1;
+
+}
+
+.card8:hover .hover-text8 {
+    opacity: 1;
+
+}
+
+.section_picture2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+
+}
+
+.container_picture2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.carousel input[type="radio"] {
+    display: none;
+}
+
+.carousel-label {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+
+.gallery {
+    width: 100%;
+    height: 100%;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out,
+    ;
+}
+
+/* Which either gallery is checked the subsequent gallery will become visible  */
+#gallery1:checked~.gallery1,
+#gallery2:checked~.gallery2 {
+    display: block;
+    opacity: 1;
+}
+
+
+.carousel-label1,
+.carousel-label2 {
+    cursor: pointer;
+}
+
+
+.carousel-label1:hover {
+    background-color: #555;
+}
+
+.carousel-label2:hover {
+    background-color: #555;
+}
+
+.carousel-button1 {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+
+.carousel-button1:hover {
+    background-color: #555;
+}
+
+/*Toggle not 100% necessary but might be useful must discuss with team*/
+/* #toggle-gallery:checked~.carousel .gallery {
+    display: block;
+}
+
+
+#toggle-gallery:not(:checked)~.carousel .gallery {
+    display: none;
+} */
+
+.carousel-button {
+    display: none;
+}
+
+.button1 {
+    position: absolute;
+    bottom: 270px;
+    left: 20px;
+}
+
+.button2 {
+    position: absolute;
+    bottom: 270px;
+    right: 20px;
+}
