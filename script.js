@@ -14,6 +14,7 @@ particpate.addEventListener (`submit`, (e) => {
     // console.log('childname is: ', childName.value)
     if (childName.value === '' || childName.value === undefined ) {
         message.push("Child's name is required"); 
+        
         // console.log(message.length)
     }
 
