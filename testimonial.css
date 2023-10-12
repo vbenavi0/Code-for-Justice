@@ -58,18 +58,23 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 50px;
+    gap: 5%;
     height: 500px;
-    width: 900px;
+    width: 90%;
     text-align: center;
+    /* background-color: skyblue; */
+    padding: 50px;
 }
 
 .quote{
     display: flex;
+    width: 300px;
+    /* background-color: white; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 12px;
+    /* border: 10px solid skyblue; */
     box-shadow: 0 1px 4px 1px rgba(112, 117, 122, 0.2);
 }
 
@@ -79,4 +84,6 @@
 .quote img{
     height: 80px;
     width:80px;
+    padding-top: 10px;
+
 }
