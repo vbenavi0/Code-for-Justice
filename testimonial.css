@@ -1,0 +1,82 @@
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+
+.carousel img {
+    width: 900px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+.carousel-button {
+    position: relative;
+    background: none;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    font-size: 35px;
+    cursor: pointer;
+    border-radius: .25rem;
+    padding: 0 0.5rem;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.carousel-button:hover{
+    color: white;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+#prevbutton {
+    left: 1rem;
+}
+
+#nextbutton{
+    right: 1rem;
+}
+
+/* grid styling */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 50px;
+    height: 500px;
+    width: 900px;
+    text-align: center;
+}
+
+.quote{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    box-shadow: 0 1px 4px 1px rgba(112, 117, 122, 0.2);
+}
+
+.quote:hover{
+    box-shadow: 0 1px 4px 1px rgba(112, 117, 122, 0.5);
+}
+.quote img{
+    height: 80px;
+    width:80px;
+}
