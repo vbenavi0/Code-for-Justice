@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF_8">
+    <meta name="viewport" content="width=device_width, initial_scale=1.0">
     <title>Contact</title>
     <link href="style.css" rel="stylesheet" type="text/css"/>
     <link href="contact.css" rel="stylesheet" type="text/css"/>
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <script src="script.js"></script>
     <header>
         <p></p>
         <a href="index.html">Home</a>
@@ -18,14 +18,112 @@
         <a href="contact.html">Contact</a>
     </header>
 
+    <main>
+        <h1>Contact Us!</h1>
+        <section>
+            <h2>Wanting Your Child to Particpate?</h2> 
+            <div id="error1"></div>
+            <form id="particpate">
+                <ul>
+                    <li>
+                        <label for="child_name">Child Name</label> <br>
+                        <input type="text" id="child_name" name="child_name">
+                    </li>
+                    <li>
+                        <label for="child_grade">Child's Grade</label> <br>
+                        <input type="text" id="child_grade" name="child_grade">
+                    </li>
+                    <li>
+                        <fieldset>
+                            <legend>Subjects That Want Child to Particapet in?</legend>
+                                <input type="checkbox" id="math" name="math" value="Math">
+                                <label for="math">Math</label> <br>
+                                <label for="subject">What Specfic Math Are They In?</label> <br>
+                                <input type="text" id="subject" name="child_grade"> <br>
+                                <input type="checkbox" id="subject" name="reading" value="reading">
+                                <label for="subject">Reading</label> <br>
+                        </fieldset>
+                    </li>
+                    <li>
+                        <label for="parents_name">Parent Name</label> <br>
+                        <input type="text" id="parents_name" name="parents_name">
+                    </li>
+                    <li>
+                        <label for="phone_number">Phone Number</label> <br>
+                        <input type="text" id="phone_number" name="phone_number">
+                    </li>
+                    <li>
+                        <label for="email">Email</label> <br>
+                        <input type="text" id="email" name="email">
+                    </li>
+                </ul>  
+                <button type="submit" id="btn1" onclick="">Submit</button>
+            </form>
+        </section>
+        
+        <section> 
+            <h2>Looking to Join our Team?</h2>
+            <div id="error2"></div>
+            <form id="team">
+                <ul>
+                    <li>
+                        <label for="emp_name"> Name </label> <br>
+                        <input type="text" id="emp_name" name="emp_name">
+                    </li> 
+                    <li>
+                        <label for="emp_email"> Email </label> <br>
+                        <input type="text" id="emp_email" name="emp_email">
+                    </li> 
+                    <li>
+                        <label for="emp_number">Phone Number</label> <br>
+                        <input type="text" id="emp_number" name="emp_number">
+                    </li>
+                    <li>
+                        <label for="skill"> Courses You Are Intrested in Leading </label> <br>
+                        <input type="text" id="skill" name="skill">
+                    </li>
+                </ul> 
+                <button type="submit" id="btn2">Sumbit</button>
+            </form>
+        </section>
+       
+        <section>
+            <h2>Wanting to Donate or Become a Sponsor?</h2> 
+            <div id="error3"></div>
+            <form id="donate">
+                <ul>
+                    <li>
+                        <label for="donor_name"> Name </label> <br>
+                        <input type="text" id="donor_name" name="donor_name">
+                    </li>  
+                    <li>
+                        <label for="emp_name"> Organization name </label> <br>
+                        <input type="text" id="emp_name" name="emp_name">
+                    </li> 
+                    <li>
+                        <label for="donor_email"> Email </label> <br>
+                        <input type="text" id="donor_email" name="donor_email">
+                    </li>  
+                    <li>
+                        <label for="donor_number">Phone Number</label> <br>
+                        <input type="text" id="donor_number" name="donor_number">
+                    </li> 
+                    <li>
+                        <label for="money">Donation Amount</label> <br>
+                        <input type="text" id="money" name="money">
+                    </li>
+                </ul>
+                <button type="submit" id="btn3">Sumbit</button>
+            </form>
+        </section>
+    </main>
 
-
-    <footer>
+     <!-- <footer>
         <a href="about.html">Facebook</a>
         <a href="about.html">Instagram</a>
         <a href="about.html">Twitter</a>
         <a href="about.html">Youtube</a>
         <a href="about.html">Venmo</a>
-    </footer>
+    </footer>  -->
 </body>
 </html>
