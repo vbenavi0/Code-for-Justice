@@ -23,7 +23,7 @@
         <section>
             <h2>Wanting Your Child to Particpate?</h2> 
             <div id="error1"></div>
-            <form id="particpate">
+            <form id="particpate" onsubmit="return emailVad()">
                 <ul>
                     <li>
                         <label for="child_name">Child Name</label> <br>
@@ -83,7 +83,7 @@
                         <input type="text" id="skill" name="skill">
                     </li>
                 </ul> 
-                <button type="submit" id="btn2">Sumbit</button>
+                <button type="submit" id="btn2">Submit</button>
             </form>
         </section>
        
@@ -97,8 +97,8 @@
                         <input type="text" id="donor_name" name="donor_name">
                     </li>  
                     <li>
-                        <label for="emp_name"> Organization name </label> <br>
-                        <input type="text" id="emp_name" name="emp_name">
+                        <label for="org_name"> Organization name </label> <br>
+                        <input type="text" id="org_name" name="org_name">
                     </li> 
                     <li>
                         <label for="donor_email"> Email </label> <br>
@@ -113,7 +113,7 @@
                         <input type="text" id="money" name="money">
                     </li>
                 </ul>
-                <button type="submit" id="btn3">Sumbit</button>
+                <button type="submit" id="btn3">Submit</button>
             </form>
         </section>
     </main>
