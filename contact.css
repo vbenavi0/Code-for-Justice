@@ -1,3 +1,22 @@
-body{
-    margin: 50px;
+.main{
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.sec1{
+    display: inline-block;
+    width: 85%;
+    color: black;
+    background-color: #87e7f2 ;
+    border: 2px solid black;
+    font-size: 15px;
+    padding: 10px;
+    margin: 5px; 
+    justify-content: center; 
+    
+}
+ul{
+    list-style-type: none  
 }

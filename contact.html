@@ -6,7 +6,8 @@
     <title>Contact</title>
     <link href="style.css" rel="stylesheet" type="text/css"/>
     <link href="contact.css" rel="stylesheet" type="text/css"/>
-    <script src="script.js" defer></script>
+    <script src="script.js" defer></script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
 <body>
     <header>
@@ -18,9 +19,9 @@
         <a href="contact.html">Contact</a>
     </header>
 
-    <main>
+    <main class="main">
         <h1>Contact Us!</h1>
-        <section>
+        <section class="sec1">
             <h2>Wanting Your Child to Particpate?</h2> 
             <div id="error1"></div>
             <form id="particpate" onsubmit="return emailVad()">
@@ -57,7 +58,8 @@
                         <input type="text" id="email" name="email">
                     </li>
                 </ul>  
-                <button type="submit" id="btn1" onclick="">Submit</button>
+                <button type="submit" id="btn1" onclick="" class="btn waves-effect waves-light" name="action">Submit
+                    <i class="material-icons right"></i></button>
             </form>
         </section>
         
