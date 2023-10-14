@@ -89,7 +89,13 @@ h2 {
     text-align: center;
 } */
 
-img {
+.container img{
+    max-width: 200px;
+    height: auto;
+
+}
+
+.container2 img{
     max-width: 200px;
     height: auto;
 

@@ -7,6 +7,11 @@ main{
     
     #img1{
     width: 80%;
+    margin: 5px;
+    }
+
+    figcaption{
+        font-family: 'ABeeZee', sans-serif;
     }
     
     
@@ -15,7 +20,7 @@ main{
     text-align: center;
     width: 80%;
     height: auto;
-    background-color: white;
+    /* background-color: white; */
     padding-bottom: 2px;
     border-radius: 5px;
     margin: 0;
@@ -28,10 +33,10 @@ main{
     width: 75%;
     justify-content: center;
     text-align: center;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     padding: 10px;
     border-radius: 5px;
-    background-color: #0AA6CF;
+    background-color: #85CCEA;
     margin-left: auto;
     margin-right: auto;
     }
@@ -51,28 +56,61 @@ main{
     
     
     #foci{
-    display: flex;
     justify-content: center;
     margin: 0;
-    background-color: white;
+    /* background-color: white; */
     text-align: center;
     border-radius: 5px;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: auto;
+    gap: 10px;
     }
     
     
     .focus{
-    width: 25%;
+    width: 80%;
     height: auto;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     border-radius: 5px;
-    background-color: #0AA6CF;
+    background-color: #AEDEA4;
     padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+    #focus1{
+        background-color: #DBBAFC;
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    #focus2{
+        background-color: #AEDEA4;
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    #focus3{
+        background-color: #F3B6C6;
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    #focus4{
+        background-color: #F5D393;
+        grid-column: 4;
+        grid-row: 1;
     }
     
     
     .fImg{
     width: 200px;
     height: 140px;
+    margin: 5px;
+    max-width: 90%;
+    max-height: 20%;
+    min-height: 100px;
     }
     
     
@@ -80,7 +118,7 @@ main{
     justify-content: center;
     width: 80%;
     height: auto;
-    background-color: white;
+    /* background-color: white; */
     margin: 0;
     text-align: center;
     border-radius: 5px;
@@ -106,3 +144,60 @@ main{
     border-radius: 5px;
     }
     
+    @media screen and (max-width:1050px){ /* Resizing for tablet screens */
+    
+        #foci{
+            grid-template-columns: 40% 40%;
+            grid-template-rows: auto auto;
+        }
+        #focus1{
+            grid-column: 1;
+            grid-row: 1;
+        }
+    
+        #focus2{
+            grid-column: 2;
+            grid-row: 1;
+        }
+    
+        #focus3{
+            grid-column: 1;
+            grid-row: 2;
+        }
+    
+        #focus4{
+            grid-column: 2;
+            grid-row: 2;
+        }
+    }
+
+    @media screen and (max-width:550px){ /* Resizing for tablet screens */
+
+        html{
+            font-size: 10px;
+        }
+    
+        #foci{
+            grid-template-columns: 80%;
+            grid-template-rows: auto auto auto auto;
+        }
+        #focus1{
+            grid-column: 1;
+            grid-row: 1;
+        }
+    
+        #focus2{
+            grid-column: 1;
+            grid-row: 2;
+        }
+    
+        #focus3{
+            grid-column: 1;
+            grid-row: 3;
+        }
+    
+        #focus4{
+            grid-column: 1;
+            grid-row: 4;
+        }
+    }
