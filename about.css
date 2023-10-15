@@ -1,0 +1,113 @@
+h1 {
+    text-align: center;
+    margin: 60px;
+    width: 90%;
+    border-bottom: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    text-align: center;
+    margin: 40px;
+    width: 80%;
+    border-bottom: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.paragraphs {
+    color: black;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* 
+.grids {
+    display: flex;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-items: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px; 
+}  */
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+     /* flex-wrap: wrap; */
+    height: 20%;
+}
+.box1 {
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    height: 20%;
+    /* margin-right: 303.5px; */
+ 
+}
+
+.container2 .box {
+    align-self: center;
+    margin-top: 50px;
+
+}
+/* 
+.container2 .box2 {
+    align-self: center;
+} */
+
+/* for the container look up flex wrap and playing with and height */
+
+
+/* .grid {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    text-align: center;
+} */
+
+.container img{
+    max-width: 200px;
+    height: auto;
+
+}
+
+.container2 img{
+    max-width: 200px;
+    height: auto;
+
+}
+
+
+@media (min-width: 600px) {
+
+}
+
+
+.footer {
+    position: absolute;
+    margin-bottom: 50px;
+}

@@ -10,20 +10,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
 <body>
-    <header>
-        <p></p>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="pictures.html">Pictures</a>
-        <a href="testimonial.html">Testimonial</a>
-        <a href="contact.html">Contact</a>
+    <header class= "logoBar">
+        <img id = 'logo' src = images/logo1.png alt = 'logo'>
     </header>
 
     <main class="main">
         <h1>Contact Us!</h1>
         <section class="sec1">
             <h2>Wanting Your Child to Particpate?</h2> 
-            <div id="error1"></div>
+            <div id="error1" class="error"></div>
             <form id="particpate" onsubmit="return emailVad()">
                 <ul>
                     <li>
@@ -36,7 +31,7 @@
                     </li>
                     <li>
                         <fieldset>
-                            <legend>Subjects That Want Child to Particapet in?</legend>
+                            <legend>Subjects That Want Child to Particapate in?</legend>
                                 <input type="checkbox" id="math" name="math" value="Math">
                                 <label for="math">Math</label> <br>
                                 <label for="subject">What Specfic Math Are They In?</label> <br>
@@ -63,10 +58,10 @@
             </form>
         </section>
         
-        <section> 
+        <section class="sec1" id="sec2"> 
             <h2>Looking to Join our Team?</h2>
-            <div id="error2"></div>
-            <form id="team">
+            <div id="error2" class="error"></div>
+            <form id="team" >
                 <ul>
                     <li>
                         <label for="emp_name"> Name </label> <br>
@@ -85,13 +80,14 @@
                         <input type="text" id="skill" name="skill">
                     </li>
                 </ul> 
-                <button type="submit" id="btn2">Submit</button>
+                <button type="submit" id="btn2" onclick="" class="btn waves-effect waves-light" name="action">Submit
+                    <i class="material-icons right"></i></button>
             </form>
         </section>
        
-        <section>
+        <section class="sec1" id="sec3">
             <h2>Wanting to Donate or Become a Sponsor?</h2> 
-            <div id="error3"></div>
+            <div id="error3" class="error"></div>
             <form id="donate">
                 <ul>
                     <li>
@@ -115,17 +111,17 @@
                         <input type="text" id="money" name="money">
                     </li>
                 </ul>
-                <button type="submit" id="btn3">Submit</button>
+                <button type="submit" id="btn3" onclick="" class="btn waves-effect waves-light" name="action">Submit
+                    <i class="material-icons right"></i></button>
             </form>
         </section>
     </main>
 
-     <!-- <footer>
-        <a href="about.html">Facebook</a>
-        <a href="about.html">Instagram</a>
-        <a href="about.html">Twitter</a>
-        <a href="about.html">Youtube</a>
-        <a href="about.html">Venmo</a>
-    </footer>  -->
+    <footer>
+        <a href="https://www.facebook.com/"><img class = 'icon' src= "images/fb.png" alt = 'facebook'></a>
+        <a href="https://www.instagram.com/"><img class = 'icon' src= "images/ig.png" alt = 'instagram'></a>
+        <a href="https://twitter.com/"><img class = 'icon' src= "images/x.png" alt = 'twitter'></a>
+        <a href="https://www.youtube.com/"><img class = 'icon' src= "images/yt.png" alt = 'youtube'></a>
+    </footer>
 </body>
 </html>
