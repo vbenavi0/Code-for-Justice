@@ -1,6 +1,6 @@
 h1 {
     text-align: center;
-    margin: 60px;
+    margin: 40px;
     width: 90%;
     border-bottom: 2px solid black;
     margin-left: auto;
@@ -38,7 +38,7 @@ h2 {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
     margin-left: auto;
     margin-right: auto;
@@ -46,19 +46,20 @@ h2 {
      /* flex-wrap: wrap; */
     height: 20%;
 }
+
 .box1 {
     justify-content: center;
     text-align: center;
-    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
+    padding: 2px;
 }
 
 .container2 {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
     margin-left: auto;
     margin-right: auto;
@@ -68,10 +69,10 @@ h2 {
  
 }
 
-.container2 .box {
+.box2 {
     align-self: center;
-    margin-top: 50px;
-
+    margin-top: 20px;
+    padding: 2px;
 }
 /* 
 .container2 .box2 {
@@ -90,20 +91,109 @@ h2 {
 } */
 
 .container img{
-    max-width: 200px;
+    width: 250px;
     height: auto;
-
+    border-radius: 5px;
 }
 
 .container2 img{
-    max-width: 200px;
+    width: 250px;
     height: auto;
-
+    border-radius: 5px;
 }
 
+#box1{
+    background-color: #F3B6C6;
+    border-radius: 5px;
+}
 
-@media (min-width: 600px) {
+#box2{
+    background-color: #DBBAFC;
+    border-radius: 5px;
+}
 
+#box3{
+    background-color: #85CCEA;
+    border-radius: 5px;
+}
+
+#box4{
+    background-color: #AEDEA4;
+    border-radius: 5px;
+}
+
+#box5{
+    background-color: #F5D393;
+    border-radius: 5px;
+}
+
+@media screen and (max-width:1050px){ /* Resizing for phone screens */
+
+    .container img{
+        width: 150px;
+        height: auto;
+    
+    }
+    
+    .container2 img{
+        width: 150px;
+        height: auto;
+    
+    }
+
+    .box1 {
+        max-width: 150px;
+    }
+
+    .box2 {
+        max-width: 150px;
+    }
+}
+
+@media screen and (max-width:600px){ /* Resizing for phone screens */
+
+    .container img{
+        width: 100px;
+        height: auto;
+    
+    }
+    
+    .container2 img{
+        width: 100px;
+        height: auto;
+    
+    }
+
+    .box1 {
+        width: 100px;
+    }
+
+    .box2 {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width:400px){ /* Resizing for phone screens */
+
+    .container img{
+        width: 75px;
+        height: auto;
+    
+    }
+    
+    .container2 img{
+        width: 75px;
+        height: auto;
+    
+    }
+
+    .box1 {
+        width: 75px;
+    }
+
+    .box2 {
+        width: 75px;
+    }
 }
 
 
