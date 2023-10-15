@@ -1,3 +1,8 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
 .content{
     display: flex;
     flex-direction: column;
@@ -62,28 +67,78 @@
     height: 500px;
     width: 90%;
     text-align: center;
-    /* background-color: skyblue; */
     padding: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .quote{
     display: flex;
     width: 300px;
-    /* background-color: white; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 12px;
-    /* border: 10px solid skyblue; */
-    box-shadow: 0 1px 4px 1px rgba(112, 117, 122, 0.2);
+    border-radius: 10%;
 }
 
-.quote:hover{
-    box-shadow: 0 1px 4px 1px rgba(112, 117, 122, 0.5);
+.profile{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
 }
+
 .quote img{
-    height: 80px;
-    width:80px;
-    padding-top: 10px;
-
+    height: 70px;
+    width:70px;
+    border-radius: 50%;
 }
+
+.quote p, .quote h4{
+    padding: 0px 20px 0px;
+}
+
+#lisa h4, #raphael h4{
+    color:rgba(243, 182, 198, 1) ;
+}
+
+#kevin h4, #natalia h4{
+    color: rgba(245, 211, 147, 1);
+}
+
+#eliana h4{
+    color: rgba(174, 222, 164, 1);
+}
+
+#javier h4, #ana h4{
+    color: rgba(133, 204, 234, 1);
+}
+
+#james{
+    color: rgba(219, 186, 252, 1);
+}
+
+#lisa, #raphael {
+    box-shadow: 0px 4px 6px 4px rgba(243, 182, 198, 0.5);
+}
+
+#kevin, #natalia{
+    box-shadow: 0 4px 6px 4px rgba(245, 211, 147, 0.5);
+}
+
+#eliana{
+    box-shadow: 0 4px 6px 4px rgba(174, 222, 164, 0.5);
+}
+
+#javier, #ana{
+    box-shadow: 0 4px 6px 4px rgba(133, 204, 234, 0.5);
+}
+
+#james{
+    box-shadow: 0 4px 6px 4px rgba(219, 186, 252, 0.5);
+}
+
+
+/*  Pink : #F3B6C6 rgba(243, 182, 198, 1)
+    Blue : #85CCEA rgba(133, 204, 234, 1)
+    Yellow : #F5D393 rgba(245, 211, 147, 1)
+    Green : #AEDEA4 rgba(174, 222, 164, 1)
+    Purple : #DBBAFC rgba(219, 186, 252, 1) */
