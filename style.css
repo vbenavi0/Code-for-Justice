@@ -138,6 +138,10 @@ html{
 
         html{
             font-size: 9px;
+            background-image: url("images/back2.png");
+            background-size: cover;
+            background-position: center; 
+            background-repeat: no-repeat;
         }
 
         #logo{
