@@ -19,35 +19,40 @@ body{
 .carousel {
     display: flex;
     overflow: hidden;
-    margin-bottom: 100px;
+    margin: 100px 0 50px 0;
 }
 
 .carousel img {
-    width: 900px;
-    height: 400px;
+    width: 800px;
+    height: 300px;
     object-fit: cover;
+    display:none;
+    border-radius: 20px;
+    box-shadow: 0px 4px 6px 4px rgba(255, 255, 255, 0.7);
 }
 
-.buttons {
+button {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .carousel-button {
     position: relative;
     background: none;
     border: none;
     padding: 10px;
-    margin: 10px;
-    font-size: 35px;
+    margin: 25px;
+    font-size: 30px;
     cursor: pointer;
     border-radius: .25rem;
-    padding: 0 0.5rem;
-    background-color: rgba(0, 0, 0, .1);
+    padding: 5px 10px;
+    color:white;
+    background-color: rgba(243, 182, 198, 0.5);
 }
 
 .carousel-button:hover{
-    color: white;
-    background-color: rgba(0, 0, 0, .2);
+    color: black;
+    background-color: (243, 182, 198, 1);
 }
 
 #prevbutton {
@@ -78,6 +83,7 @@ body{
     justify-content: center;
     align-items: center;
     border-radius: 10%;
+    background-color: white;
 }
 
 .profile{
@@ -96,44 +102,36 @@ body{
     padding: 0px 20px 0px;
 }
 
-#lisa h4, #raphael h4{
+#lisa h4, #natalia h4{
     color:rgba(243, 182, 198, 1) ;
 }
 
-#kevin h4, #natalia h4{
+#lisa, #natalia {
+    box-shadow: 0px 4px 6px 4px rgba(243, 182, 198, 0.7);
+}
+
+#kevin h4, #raphael h4{
     color: rgba(245, 211, 147, 1);
 }
 
-#eliana h4{
+#kevin, #raphael{
+    box-shadow: 0 4px 6px 4px rgba(245, 211, 147, 0.7);
+}
+
+#eliana h4, #ana h4{
     color: rgba(174, 222, 164, 1);
 }
 
-#javier h4, #ana h4{
-    color: rgba(133, 204, 234, 1);
+#eliana, #ana{
+    box-shadow: 0 4px 6px 4px rgba(174, 222, 164, 0.7);
 }
 
-#james{
+#james h4, #javier h4{
     color: rgba(219, 186, 252, 1);
 }
 
-#lisa, #raphael {
-    box-shadow: 0px 4px 6px 4px rgba(243, 182, 198, 0.5);
-}
-
-#kevin, #natalia{
-    box-shadow: 0 4px 6px 4px rgba(245, 211, 147, 0.5);
-}
-
-#eliana{
-    box-shadow: 0 4px 6px 4px rgba(174, 222, 164, 0.5);
-}
-
-#javier, #ana{
-    box-shadow: 0 4px 6px 4px rgba(133, 204, 234, 0.5);
-}
-
-#james{
-    box-shadow: 0 4px 6px 4px rgba(219, 186, 252, 0.5);
+#james, #javier{
+    box-shadow: 0 4px 6px 4px rgba(219, 186, 252, 0.7);
 }
 
 
