@@ -7,6 +7,8 @@ const parentEmail = document.getElementById ("email");
 const error1 = document.getElementById ("error1");
 const particpate = document.getElementById ("particpate");  
 
+const valdNum = /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/; 
+const valdEmail = /^[\w\.-]+@([\w-]+\.)+[\w-]{2,4}$/;
 
 particpate.addEventListener (`submit`, (e) => {
     e.preventDefault()
@@ -23,21 +25,18 @@ particpate.addEventListener (`submit`, (e) => {
         message.push(" Parent's Name is required");
     }
 
-    if (parentNumber.value === '' || parentNumber.value === undefined || isNaN(parentNumber)) {
-        message.push(" Parent's Number  is required"); 
-    } 
+    if (parentNumber.value === "" || parentNumber.value === undefined){
+        message.push(" Parent's Number is required"); 
+    } else if (!valdNum.test(parentNumber.value)) {
+        message.push(" Parent's Number is Not Vaild"); 
+    }
 
     if (parentEmail.value === '' || parentEmail.value === undefined) {
-        message.push(" Parent's Email is required") ;
+        message.push(" Parent's Email is required") ; 
+    } else if (!valdEmail.test(parentEmail.value)){ 
+        message.push(" Parent's Email is Not Valid");
     }
     
-    function emailVad(){
-        const emailVald = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/
-        if (emailVald.test(parentEmail)){
-           message.push(" Parent's Email is Not Valid ");
-        }
-    }
-
     if (message.length > 0) {
     error1.innerText = message
     }
@@ -59,9 +58,14 @@ team.addEventListener (`submit`, (e) => {
 
     if (empNum.value === '' || empNum.value === undefined) {
         message.push(" Your Number is required"); 
-    } 
+    } else if (!valdNum.test(empNum.value)) {
+        message.push(" Your Number is Not Vaild"); 
+    }
+   
     if (empEmail.value === '' || empEmail.value === undefined) {
         message.push(" Your Email is required"); 
+    }else if (!valdEmail.test(empEmail.value)){ 
+            message.push(" Your Email is Not Valid");
     }
 
     if (skill.value === '' || skill.value === undefined) {
@@ -71,9 +75,9 @@ team.addEventListener (`submit`, (e) => {
     if (message.length > 0) {
         error2.innerText = message
         }
-    }) 
+}) 
 
-    // Donate 
+// Donate 
 
 const donName = document.getElementById("donor_name");
 const orgName = document.getElementById("org_name");
@@ -82,26 +86,34 @@ const donNum = document.getElementById("donor_number");
 const money = document.getElementById("money");
 const error3 = document.getElementById("error3");
 
-    donate.addEventListener (`submit`, (e) => {
-        e.preventDefault()
-        let message =[]
-        if (donName.value === '' || donName.value === undefined ) {
+donate.addEventListener (`submit`, (e) => {
+   e.preventDefault()
+    let message =[]
+    if (donName.value === '' || donName.value === undefined ) {
             message.push(" Your Name is required"); 
-        } 
-        if (orgName.value === '' || orgName.value === undefined ) {
-            message.push(" Your Organization Name is required"); 
-        } 
-        if (donNum.value === '' || donNum.value === undefined) {
-            message.push(" Your  Organization Number is required"); 
-        } 
-        if (donEmail.value === '' || donEmail.value === undefined) {
-            message.push(" Your Organization Email is required"); 
-        }
-        if (money.value === '' || money.value === undefined ) {
-            message.push(" Your Name is required"); 
-        } 
+    } 
 
-        if (message.length > 0) {
+    if (orgName.value === '' || orgName.value === undefined ) {
+            message.push(" Organization Name is required"); 
+    } 
+
+    if (donNum.value === '' || donNum.value === undefined) {
+            message.push(" Your  Organization Number is required"); 
+    } else if (!valdNum.test(donNum.value)) {
+            message.push("Number is Not Vaild"); 
+    }
+
+    if (donEmail.value === '' || donEmail.value === undefined) {
+            message.push(" Organization Email is required"); 
+    } else if (!valdEmail.test(donEmail.value)){ 
+            message.push(" Organization Email is Not Valid");
+    }
+
+    if (money.value === '' || money.value === undefined ) {
+            message.push(" Your Donatation Amount is required"); 
+    } 
+
+    if (message.length > 0) {
             error3.innerText = message
-            }
+    }
 }) 
