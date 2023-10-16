@@ -7,18 +7,27 @@ Aqua: #78efbf
 /*Making a simply grid for the Picture Page*/
 .galleryheader {
     position: absolute;
-    top: 100px;
+    top: 15px;
     left: 150px;
     font-size: 36px;
     font-weight: 500;
+    height: 80px;
+    border-style: none none solid none;
+    width: 400px;
+    border-width: 3px;
+
 }
 
 .galleryheader2 {
     position: absolute;
-    top: 100px;
+    top: 15px;
     left: 150px;
     font-size: 36px;
     font-weight: 500;
+    height: 80px;
+    border-style: none none solid none;
+    width: 400px;
+    border-width: 3px;
 }
 
 .section_picture {
@@ -27,7 +36,7 @@ Aqua: #78efbf
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 200px;
+    margin-top: 125px;
 
 }
 
@@ -38,6 +47,10 @@ Aqua: #78efbf
     gap: 5px;
 }
 
+img {
+    transition: filter 0.7s, object-fit 0.7s, opacity 0.7s;
+}
+
 img:hover {
     filter: blur(15px);
     object-fit: cover;
@@ -45,35 +58,19 @@ img:hover {
     /* Adjust the value to control the amount of blurriness */
 }
 
-
-
-/* .hover-text1 {
-    position: absolute;
-    top: 400px;
-    margin-left: 130px;
-    color: white;
-} */
-
 .hover-text1,
 .hover-text2,
 .hover-text3,
 .hover-text4 {
     position: absolute;
-    top: 400px;
+    top: 220px;
     margin-left: 130px;
     color: black;
     opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.hover-text1,
-.hover-text2,
-.hover-text3,
-.hover-text4 {
+    transition: opacity 0.8s ease;
+    z-index: -1;
     width: 200px;
     height: 50px;
-    position: absolute;
-    top: 300px;
     margin-left: 80px;
 
 }
@@ -82,64 +79,89 @@ img:hover {
 .hover-text6,
 .hover-text7,
 .hover-text8 {
-    width: 200px;
-    height: 50px;
     position: absolute;
-    bottom: 300px;
-    margin-left: 80px;
-}
-
-.hover-text5,
-.hover-text6,
-.hover-text7,
-.hover-text8 {
-    position: absolute;
-    bottom: 60px;
-    margin-left: 130px;
+    bottom: 330px;
+    /* margin-left: 140px; */
     color: black;
     opacity: 0;
     transition: opacity 0.3s ease;
+    width: 200px;
+    height: 50px;
+    margin-left: 80px;
+    margin-bottom: 50px;
+    z-index: -1;
 }
 
-.card1:hover .hover-text1 {
+.hover-text9,
+.hover-text10,
+.hover-text11,
+.hover-text12 {
+    position: absolute;
+    bottom: 80px;
+    color: black;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    width: 200px;
+    height: 50px;
+    margin-left: 80px;
+    margin-bottom: 50px;
+    z-index: -1;
+}
+
+.hover-text13,
+.hover-text14,
+.hover-text15,
+.hover-text16 {
+    position: absolute;
+    top: 220px;
+    margin-left: 130px;
+    color: black;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+    z-index: -1;
+    width: 200px;
+    height: 50px;
+    margin-left: 80px;
+
+}
+
+.hover-text17,
+.hover-text18,
+.hover-text19,
+.hover-text20 {
+    position: absolute;
+    bottom: 330px;
+    /* margin-left: 140px; */
+    color: black;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    width: 200px;
+    height: 50px;
+    margin-left: 80px;
+    margin-bottom: 50px;
+    z-index: -1;
+}
+
+.hover-text21,
+.hover-text22,
+.hover-text23,
+.hover-text24 {
+    position: absolute;
+    bottom: 80px;
+    color: black;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    width: 200px;
+    height: 50px;
+    margin-left: 80px;
+    margin-bottom: 50px;
+    z-index: -1;
+}
+
+[class^="card"]:hover [class^="hover-text"] {
     opacity: 1;
-    /* Make the text visible when hovering over the image container */
 }
 
-.card2:hover .hover-text2 {
-    opacity: 1;
-
-}
-
-.card3:hover .hover-text3 {
-    opacity: 1;
-
-}
-
-.card4:hover .hover-text4 {
-    opacity: 1;
-
-}
-
-.card5:hover .hover-text5 {
-    opacity: 1;
-
-}
-
-.card6:hover .hover-text6 {
-    opacity: 1;
-
-}
-
-.card7:hover .hover-text7 {
-    opacity: 1;
-
-}
-
-.card8:hover .hover-text8 {
-    opacity: 1;
-
-}
 
 .section_picture2 {
     width: 100%;
@@ -147,7 +169,7 @@ img:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 200px;
+    margin-top: 125px;
 
 }
 
@@ -169,13 +191,12 @@ img:hover {
     display: none;
 }
 
-.carousel-label {
-    background-color: #333;
-    color: white;
-    cursor: pointer;
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin: 10px;
+.carousel-label1:hover img,
+.carousel-label2:hover img {
+    /* Remove the hover effect styles */
+    filter: none;
+    object-fit: unset;
+    opacity: 1;
 }
 
 
@@ -199,40 +220,14 @@ img:hover {
 .carousel-label1,
 .carousel-label2 {
     cursor: pointer;
+    position: relative;
+    z-index: 0;
 }
 
-
-.carousel-label1:hover {
-    background-color: #555;
+.carousel-label1 img {
+    position: relative;
+    z-index: 2;
 }
-
-.carousel-label2:hover {
-    background-color: #555;
-}
-
-.carousel-button1 {
-    background-color: #333;
-    color: white;
-    cursor: pointer;
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin: 10px;
-}
-
-
-.carousel-button1:hover {
-    background-color: #555;
-}
-
-/*Toggle not 100% necessary but might be useful must discuss with team*/
-/* #toggle-gallery:checked~.carousel .gallery {
-    display: block;
-}
-
-
-#toggle-gallery:not(:checked)~.carousel .gallery {
-    display: none;
-} */
 
 .carousel-button {
     display: none;
@@ -240,12 +235,56 @@ img:hover {
 
 .button1 {
     position: absolute;
-    bottom: 270px;
+    bottom: 350px;
     left: 20px;
 }
 
 .button2 {
     position: absolute;
-    bottom: 270px;
+    bottom: 350px;
     right: 20px;
+}
+
+.quote-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+}
+
+.quote {
+    width: 850px;
+    height: 10px;
+    font-size: 23px;
+    font-weight: 200;
+    text-align: center;
+}
+
+@media (max-width: 1538px) {
+
+    .container_picture,
+    .container_picture2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 866px) {
+
+    .section_picture,
+    .section_picture2 {
+        width: 300px;
+        height: 1500px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .quote {
+        font-size: 18px;
+        width: 500px;
+    }
+
 }
