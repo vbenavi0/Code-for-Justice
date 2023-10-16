@@ -6,28 +6,19 @@
     <title>Contact</title>
     <link href="style.css" rel="stylesheet" type="text/css"/>
     <link href="contact.css" rel="stylesheet" type="text/css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Purple+Purse&display=swap" rel="stylesheet">
-    <script src="script.js" defer></script>
+    <script src="script.js" defer></script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
 <body>
     <header class= "logoBar">
         <img id = 'logo' src = images/logo1.png alt = 'logo'>
     </header>
-    <nav class = 'navbar'>
-        <a id = 'nav1' href="index.html">Home</a>
-        <a id = 'nav2' href="about.html">About Us</a>
-        <a id = 'nav3' href="pictures.html">Pictures</a>
-        <a id = 'nav4' href="testimonial.html">Testimonial</a>
-        <a id = 'nav5' href="contact.html">Contact</a>
-    </nav>
 
-    <main>
+    <main class="main">
         <h1>Contact Us!</h1>
-        <section>
+        <section class="sec1">
             <h2>Wanting Your Child to Particpate?</h2> 
-            <div id="error1"></div>
+            <div id="error1" class="error"></div>
             <form id="particpate">
                 <ul>
                     <li>
@@ -36,11 +27,11 @@
                     </li>
                     <li>
                         <label for="child_grade">Child's Grade</label> <br>
-                        <input type="text" id="child_grade" name="child_grade">
+                        <input type="number" id="child_grade" name="child_grade">
                     </li>
                     <li>
                         <fieldset>
-                            <legend>Subjects That Want Child to Particapet in?</legend>
+                            <legend>Subjects That Want Child to Particapate in?</legend>
                                 <input type="checkbox" id="math" name="math" value="Math">
                                 <label for="math">Math</label> <br>
                                 <label for="subject">What Specfic Math Are They In?</label> <br>
@@ -55,21 +46,22 @@
                     </li>
                     <li>
                         <label for="phone_number">Phone Number</label> <br>
-                        <input type="text" id="phone_number" name="phone_number">
+                        <input type="text" id="phone_number" name="phone_number" placeholder="(123)-456-7890">
                     </li>
                     <li>
                         <label for="email">Email</label> <br>
                         <input type="text" id="email" name="email">
                     </li>
                 </ul>  
-                <button type="submit" id="btn1" onclick="">Submit</button>
+                <button type="submit" id="btn1" onclick="" class="btn waves-effect waves-light" name="action">Submit
+                    <i class="material-icons right"></i></button>
             </form>
         </section>
         
-        <section> 
+        <section class="sec1" id="sec2"> 
             <h2>Looking to Join our Team?</h2>
-            <div id="error2"></div>
-            <form id="team">
+            <div id="error2" class="error"></div>
+            <form id="team" >
                 <ul>
                     <li>
                         <label for="emp_name"> Name </label> <br>
@@ -81,20 +73,21 @@
                     </li> 
                     <li>
                         <label for="emp_number">Phone Number</label> <br>
-                        <input type="text" id="emp_number" name="emp_number">
+                        <input type="text" id="emp_number" name="emp_number" placeholder="(123)-456-7890">
                     </li>
                     <li>
                         <label for="skill"> Courses You Are Intrested in Leading </label> <br>
                         <input type="text" id="skill" name="skill">
                     </li>
                 </ul> 
-                <button type="submit" id="btn2">Sumbit</button>
+                <button type="submit" id="btn2" onclick="" class="btn waves-effect waves-light" name="action">Submit
+                    <i class="material-icons right"></i></button>
             </form>
         </section>
        
-        <section>
+        <section class="sec1" id="sec3">
             <h2>Wanting to Donate or Become a Sponsor?</h2> 
-            <div id="error3"></div>
+            <div id="error3" class="error"></div>
             <form id="donate">
                 <ul>
                     <li>
@@ -102,8 +95,8 @@
                         <input type="text" id="donor_name" name="donor_name">
                     </li>  
                     <li>
-                        <label for="emp_name"> Organization name </label> <br>
-                        <input type="text" id="emp_name" name="emp_name">
+                        <label for="org_name"> Organization name </label> <br>
+                        <input type="text" id="org_name" name="org_name">
                     </li> 
                     <li>
                         <label for="donor_email"> Email </label> <br>
@@ -111,14 +104,15 @@
                     </li>  
                     <li>
                         <label for="donor_number">Phone Number</label> <br>
-                        <input type="text" id="donor_number" name="donor_number">
+                        <input type="text" id="donor_number" name="donor_number" placeholder="(123)-456-7890">
                     </li> 
                     <li>
                         <label for="money">Donation Amount</label> <br>
-                        <input type="text" id="money" name="money">
+                        <input type="number" id="money" name="money">
                     </li>
                 </ul>
-                <button type="submit" id="btn3">Sumbit</button>
+                <button type="submit" id="btn3" onclick="" class="btn waves-effect waves-light" name="action">Submit
+                    <i class="material-icons right"></i></button>
             </form>
         </section>
     </main>
