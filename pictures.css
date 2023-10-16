@@ -7,7 +7,7 @@ Aqua: #78efbf
 /*Making a simply grid for the Picture Page*/
 .galleryheader {
     position: absolute;
-    top: 50px;
+    top: 15px;
     left: 150px;
     font-size: 36px;
     font-weight: 500;
@@ -20,7 +20,7 @@ Aqua: #78efbf
 
 .galleryheader2 {
     position: absolute;
-    top: 50px;
+    top: 15px;
     left: 150px;
     font-size: 36px;
     font-weight: 500;
@@ -36,7 +36,7 @@ Aqua: #78efbf
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 150px;
+    margin-top: 125px;
 
 }
 
@@ -63,7 +63,7 @@ img:hover {
 .hover-text3,
 .hover-text4 {
     position: absolute;
-    top: 400px;
+    top: 220px;
     margin-left: 130px;
     color: black;
     opacity: 0;
@@ -71,93 +71,97 @@ img:hover {
     z-index: -1;
     width: 200px;
     height: 50px;
-    position: absolute;
-    top: 300px;
     margin-left: 80px;
 
 }
-
-
-/* .hover-text1,
-.hover-text2,
-.hover-text3,
-.hover-text4 {
-    width: 200px;
-    height: 50px;
-    position: absolute;
-    top: 300px;
-    margin-left: 80px;
-
-} */
-
-
-
 
 .hover-text5,
 .hover-text6,
 .hover-text7,
 .hover-text8 {
     position: absolute;
-    bottom: 60px;
-    margin-left: 130px;
+    bottom: 330px;
+    /* margin-left: 140px; */
     color: black;
     opacity: 0;
     transition: opacity 0.3s ease;
     width: 200px;
     height: 50px;
-    margin-left: 70px;
+    margin-left: 80px;
     margin-bottom: 50px;
     z-index: -1;
-
 }
 
-/* z-index: -1;
+.hover-text9,
+.hover-text10,
+.hover-text11,
+.hover-text12 {
+    position: absolute;
+    bottom: 80px;
+    color: black;
+    opacity: 0;
+    transition: opacity 0.3s ease;
     width: 200px;
     height: 50px;
-    position: absolute;
-    top: 300px;
     margin-left: 80px;
-} */
-
-.card1:hover .hover-text1 {
-    opacity: 1;
-    /* Make the text visible when hovering over the image container */
+    margin-bottom: 50px;
+    z-index: -1;
 }
 
-.card2:hover .hover-text2 {
-    opacity: 1;
-
-}
-
-.card3:hover .hover-text3 {
-    opacity: 1;
-
-}
-
-.card4:hover .hover-text4 {
-    opacity: 1;
-
-}
-
-.card5:hover .hover-text5 {
-    opacity: 1;
+.hover-text13,
+.hover-text14,
+.hover-text15,
+.hover-text16 {
+    position: absolute;
+    top: 220px;
+    margin-left: 130px;
+    color: black;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+    z-index: -1;
+    width: 200px;
+    height: 50px;
+    margin-left: 80px;
 
 }
 
-.card6:hover .hover-text6 {
-    opacity: 1;
-
+.hover-text17,
+.hover-text18,
+.hover-text19,
+.hover-text20 {
+    position: absolute;
+    bottom: 330px;
+    /* margin-left: 140px; */
+    color: black;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    width: 200px;
+    height: 50px;
+    margin-left: 80px;
+    margin-bottom: 50px;
+    z-index: -1;
 }
 
-.card7:hover .hover-text7 {
-    opacity: 1;
-
+.hover-text21,
+.hover-text22,
+.hover-text23,
+.hover-text24 {
+    position: absolute;
+    bottom: 80px;
+    color: black;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    width: 200px;
+    height: 50px;
+    margin-left: 80px;
+    margin-bottom: 50px;
+    z-index: -1;
 }
 
-.card8:hover .hover-text8 {
+[class^="card"]:hover [class^="hover-text"] {
     opacity: 1;
-
 }
+
 
 .section_picture2 {
     width: 100%;
@@ -165,7 +169,7 @@ img:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 150px;
+    margin-top: 125px;
 
 }
 
@@ -231,13 +235,13 @@ img:hover {
 
 .button1 {
     position: absolute;
-    bottom: 300px;
+    bottom: 350px;
     left: 20px;
 }
 
 .button2 {
     position: absolute;
-    bottom: 300px;
+    bottom: 350px;
     right: 20px;
 }
 
@@ -245,7 +249,7 @@ img:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10vh;
+    height: 25vh;
 }
 
 .quote {
@@ -254,4 +258,33 @@ img:hover {
     font-size: 23px;
     font-weight: 200;
     text-align: center;
+}
+
+@media (max-width: 1538px) {
+
+    .container_picture,
+    .container_picture2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 866px) {
+
+    .section_picture,
+    .section_picture2 {
+        width: 300px;
+        height: 1500px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .quote {
+        font-size: 18px;
+        width: 500px;
+    }
+
 }
