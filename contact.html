@@ -19,7 +19,7 @@
         <section class="sec1">
             <h2>Wanting Your Child to Particpate?</h2> 
             <div id="error1" class="error"></div>
-            <form id="particpate" onsubmit="return emailVad()">
+            <form id="particpate">
                 <ul>
                     <li>
                         <label for="child_name">Child Name</label> <br>
@@ -27,7 +27,7 @@
                     </li>
                     <li>
                         <label for="child_grade">Child's Grade</label> <br>
-                        <input type="text" id="child_grade" name="child_grade">
+                        <input type="number" id="child_grade" name="child_grade">
                     </li>
                     <li>
                         <fieldset>
@@ -46,7 +46,7 @@
                     </li>
                     <li>
                         <label for="phone_number">Phone Number</label> <br>
-                        <input type="text" id="phone_number" name="phone_number">
+                        <input type="text" id="phone_number" name="phone_number" placeholder="(123)-456-7890">
                     </li>
                     <li>
                         <label for="email">Email</label> <br>
@@ -73,7 +73,7 @@
                     </li> 
                     <li>
                         <label for="emp_number">Phone Number</label> <br>
-                        <input type="text" id="emp_number" name="emp_number">
+                        <input type="text" id="emp_number" name="emp_number" placeholder="(123)-456-7890">
                     </li>
                     <li>
                         <label for="skill"> Courses You Are Intrested in Leading </label> <br>
@@ -104,11 +104,11 @@
                     </li>  
                     <li>
                         <label for="donor_number">Phone Number</label> <br>
-                        <input type="text" id="donor_number" name="donor_number">
+                        <input type="text" id="donor_number" name="donor_number" placeholder="(123)-456-7890">
                     </li> 
                     <li>
                         <label for="money">Donation Amount</label> <br>
-                        <input type="text" id="money" name="money">
+                        <input type="number" id="money" name="money">
                     </li>
                 </ul>
                 <button type="submit" id="btn3" onclick="" class="btn waves-effect waves-light" name="action">Submit

@@ -7,18 +7,27 @@ Aqua: #78efbf
 /*Making a simply grid for the Picture Page*/
 .galleryheader {
     position: absolute;
-    top: 100px;
+    top: 50px;
     left: 150px;
     font-size: 36px;
     font-weight: 500;
+    height: 80px;
+    border-style: none none solid none;
+    width: 400px;
+    border-width: 3px;
+
 }
 
 .galleryheader2 {
     position: absolute;
-    top: 100px;
+    top: 50px;
     left: 150px;
     font-size: 36px;
     font-weight: 500;
+    height: 80px;
+    border-style: none none solid none;
+    width: 400px;
+    border-width: 3px;
 }
 
 .section_picture {
@@ -27,7 +36,7 @@ Aqua: #78efbf
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 200px;
+    margin-top: 150px;
 
 }
 
@@ -38,21 +47,16 @@ Aqua: #78efbf
     gap: 5px;
 }
 
+img {
+    transition: filter 0.7s, object-fit 0.7s, opacity 0.7s;
+}
+
 img:hover {
     filter: blur(15px);
     object-fit: cover;
     opacity: 0.4;
     /* Adjust the value to control the amount of blurriness */
 }
-
-
-
-/* .hover-text1 {
-    position: absolute;
-    top: 400px;
-    margin-left: 130px;
-    color: white;
-} */
 
 .hover-text1,
 .hover-text2,
@@ -63,10 +67,18 @@ img:hover {
     margin-left: 130px;
     color: black;
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.8s ease;
+    z-index: -1;
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top: 300px;
+    margin-left: 80px;
+
 }
 
-.hover-text1,
+
+/* .hover-text1,
 .hover-text2,
 .hover-text3,
 .hover-text4 {
@@ -76,18 +88,10 @@ img:hover {
     top: 300px;
     margin-left: 80px;
 
-}
+} */
 
-.hover-text5,
-.hover-text6,
-.hover-text7,
-.hover-text8 {
-    width: 200px;
-    height: 50px;
-    position: absolute;
-    bottom: 300px;
-    margin-left: 80px;
-}
+
+
 
 .hover-text5,
 .hover-text6,
@@ -99,7 +103,21 @@ img:hover {
     color: black;
     opacity: 0;
     transition: opacity 0.3s ease;
+    width: 200px;
+    height: 50px;
+    margin-left: 70px;
+    margin-bottom: 50px;
+    z-index: -1;
+
 }
+
+/* z-index: -1;
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top: 300px;
+    margin-left: 80px;
+} */
 
 .card1:hover .hover-text1 {
     opacity: 1;
@@ -147,7 +165,7 @@ img:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 200px;
+    margin-top: 150px;
 
 }
 
@@ -169,13 +187,12 @@ img:hover {
     display: none;
 }
 
-.carousel-label {
-    background-color: #333;
-    color: white;
-    cursor: pointer;
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin: 10px;
+.carousel-label1:hover img,
+.carousel-label2:hover img {
+    /* Remove the hover effect styles */
+    filter: none;
+    object-fit: unset;
+    opacity: 1;
 }
 
 
@@ -199,40 +216,14 @@ img:hover {
 .carousel-label1,
 .carousel-label2 {
     cursor: pointer;
+    position: relative;
+    z-index: 0;
 }
 
-
-.carousel-label1:hover {
-    background-color: #555;
+.carousel-label1 img {
+    position: relative;
+    z-index: 2;
 }
-
-.carousel-label2:hover {
-    background-color: #555;
-}
-
-.carousel-button1 {
-    background-color: #333;
-    color: white;
-    cursor: pointer;
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin: 10px;
-}
-
-
-.carousel-button1:hover {
-    background-color: #555;
-}
-
-/*Toggle not 100% necessary but might be useful must discuss with team*/
-/* #toggle-gallery:checked~.carousel .gallery {
-    display: block;
-}
-
-
-#toggle-gallery:not(:checked)~.carousel .gallery {
-    display: none;
-} */
 
 .carousel-button {
     display: none;
@@ -240,12 +231,27 @@ img:hover {
 
 .button1 {
     position: absolute;
-    bottom: 270px;
+    bottom: 300px;
     left: 20px;
 }
 
 .button2 {
     position: absolute;
-    bottom: 270px;
+    bottom: 300px;
     right: 20px;
+}
+
+.quote-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+.quote {
+    width: 850px;
+    height: 10px;
+    font-size: 23px;
+    font-weight: 200;
+    text-align: center;
 }
