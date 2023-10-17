@@ -5,57 +5,63 @@ Aqua: #78efbf
 */
 
 /*Making a simply grid for the Picture Page*/
-.galleryheader {
+.galleryheader1 {
     position: absolute;
-    top: 15px;
-    left: 150px;
-    font-size: 36px;
-    font-weight: 500;
-    height: 80px;
-    border-style: none none solid none;
-    width: 400px;
-    border-width: 3px;
-
+    top: 10px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .galleryheader2 {
     position: absolute;
-    top: 15px;
-    left: 150px;
-    font-size: 36px;
-    font-weight: 500;
-    height: 80px;
-    border-style: none none solid none;
-    width: 400px;
-    border-width: 3px;
+    top: 10px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .section_picture {
-    width: 100%;
+    margin-top: 125px;
+    width: 80%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 125px;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
+/* .carousel{
+    margin-top: 125px;
+} */
 
 .container_picture {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 5px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-img {
+.carousel img {
     transition: filter 0.7s, object-fit 0.7s, opacity 0.7s;
 }
 
-img:hover {
+.carousel img:hover {
     filter: blur(15px);
     object-fit: cover;
     opacity: 0.4;
     /* Adjust the value to control the amount of blurriness */
+}
+
+.arrow{
+    height: 50px;
+    width: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
 }
 
 .hover-text1,
@@ -162,25 +168,41 @@ img:hover {
     opacity: 1;
 }
 
+[class^="card"]{
+    max-width: 350px;
+    max-height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+[class^="card"] img{
+    width: 350px;
+    height: 250px;
+    border-radius: 10px;
+}
 
 .section_picture2 {
-    width: 100%;
+    width: 80%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 125px;
-
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .container_picture2 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 5px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
 .carousel {
+    display: flex;
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -205,8 +227,19 @@ img:hover {
     height: 100%;
     display: none;
     opacity: 0;
-    transition: opacity 0.3s ease-in-out,
-    ;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#gallery1{
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#gallery2{
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Which either gallery is checked the subsequent gallery will become visible  */
@@ -234,57 +267,106 @@ img:hover {
 }
 
 .button1 {
-    position: absolute;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    /* position: absolute;
     bottom: 350px;
-    left: 20px;
+    left: 200px; */
 }
 
 .button2 {
-    position: absolute;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    /* position: absolute;
     bottom: 350px;
-    right: 20px;
+    right: 200px; */
 }
 
 .quote-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 25vh;
+    width: auto;
+    height: auto;
 }
 
 .quote {
-    width: 850px;
-    height: 10px;
+    width: 75%;
+    height: auto;
     font-size: 23px;
     font-weight: 200;
     text-align: center;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-@media (max-width: 1538px) {
+@media (max-width: 1600px) {
 
     .container_picture,
     .container_picture2 {
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 5px;
         margin-right: auto;
         margin-left: auto;
     }
+
 }
 
-@media (max-width: 866px) {
+@media (max-width: 800px) {
 
-    .section_picture,
-    .section_picture2 {
+    .container_picture,
+    .container_picture2 {
         width: 300px;
-        height: 1500px;
+        height: auto;
+        grid-template-columns: repeat(1, 1fr);
         margin-right: auto;
         margin-left: auto;
     }
 
-    .quote {
-        font-size: 18px;
-        width: 500px;
+    [class^="card"] img{
+        width: 250px;
+        height: 175px;
+    }
+
+    .galleryheader1 {
+        width: 80%;
+    }
+    
+    .galleryheader2 {
+        width: 80%;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .container_picture,
+    .container_picture2 {
+        width: 200px;
+        height: auto;
+        grid-template-columns: repeat(1, 1fr);
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    [class^="card"] img{
+        width: 200px;
+        height: 150px;
+    }
+
+    .galleryheader1 {
+        width: 100%;
+    }
+    
+    .galleryheader2 {
+        width: 100%;
     }
 
 }

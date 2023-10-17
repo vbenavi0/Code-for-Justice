@@ -1,7 +1,7 @@
 h1 {
     text-align: center;
     margin: 40px;
-    width: 90%;
+    width: 80%;
     border-bottom: 2px solid black;
     margin-left: auto;
     margin-right: auto;
@@ -21,18 +21,10 @@ h2 {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-}
-/* 
-.grids {
-    display: flex;
-    flex-wrap: wrap;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    justify-items: center;
-    align-items: center;
     padding: 10px;
-    gap: 10px; 
-}  */
+    border-radius: 5px;
+    background-color: #AEDEA4;
+}
 
 .container {
     display: flex;
@@ -43,7 +35,6 @@ h2 {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-     /* flex-wrap: wrap; */
     height: 20%;
 }
 
@@ -65,7 +56,6 @@ h2 {
     margin-right: auto;
     text-align: center;
     height: 20%;
-    /* margin-right: 303.5px; */
  
 }
 
@@ -74,21 +64,6 @@ h2 {
     margin-top: 20px;
     padding: 2px;
 }
-/* 
-.container2 .box2 {
-    align-self: center;
-} */
-
-/* for the container look up flex wrap and playing with and height */
-
-
-/* .grid {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 5;
-    text-align: center;
-} */
 
 .container img{
     width: 250px;
