@@ -6,26 +6,130 @@
     <title>Testimonial</title>
     <link href="style.css" rel="stylesheet" type="text/css"/>
     <link href="testimonial.css" rel="stylesheet" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Purple+Purse&display=swap" rel="stylesheet">
 </head>
 <body>
-    <script src="script.js"></script>
-    <header>
-        <p></p>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="pictures.html">Pictures</a>
-        <a href="testimonial.html">Testimonial</a>
-        <a href="contact.html">Contact</a>
+   
+    <header class= "logoBar">
+        <img id = 'logo' src = 'images/logo1.png' alt = 'logo'>
     </header>
+    <nav class = 'navbar'>
+        <a id = 'nav1' href="index.html">Home</a>
+        <a id = 'nav2' href="about.html">About Us</a>
+        <a id = 'nav3' href="pictures.html">Gallery</a>
+        <a id = 'nav4' href="testimonial.html">Testimonial</a>
+        <a id = 'nav5' href="contact.html">Contact</a>
+    </nav>
 
+    <main class="content">
+        <h1>Testimonial</h1>
 
+        <section class="carousel-container">
+        
+            <button id="prevButton" class="carousel-button">	&larr;</button>
+            
+            <div class="carousel">
+                <img src="testimonial-photos/letter.png" alt=" This Organization's commitment to improving foundation skills is changing lives Grace L">
+                <img src="testimonial-photos/pencil.png" alt=" I'm a teacher, and I've seen students make remarkable progress with this nonprofit's support. They bridge educational gaps and empower our kids. Fatima A ">
+                <img src="testimonial-photos/book.png" alt="They provide more than education; they provide a path to a better future for our children. Jamie P">
+                <img src="testimonial-photos/crayon.png" alt="Building Blocks makes a real difference in our community. Michael T">
+            </div>
+        
+            <button id="nextButton" class="carousel-button">&rarr;</button>
+        
+        </section>
+        
 
-    <footer>
-        <a href="about.html">Facebook</a>
-        <a href="about.html">Instagram</a>
-        <a href="about.html">Twitter</a>
-        <a href="about.html">Youtube</a>
-        <a href="about.html">Venmo</a>
-    </footer>
+        <section class="grid">
+
+            <div class="quote" id="lisa">
+                <div class="profile">
+                    <img src="testimonial-photos/lisa.jpeg" alt = 'Lisa Headshot'>
+                    <h4> Lisa M </h4>
+                </div>
+                <p> "I've supported Building Blocks for years. Their positive impact on underprivileged children is amazing. The smiles on their faces as they overcome challenges are priceless."</p>
+            </div>
+        
+            <div class="quote" id="kevin">
+                <div class="profile">
+                    <img src="testimonial-photos/kevin.png" alt = 'Kevin Headshot'>
+                    <h4> Kevin R </h4>
+                </div>
+                <p> "This program's impact on our community is undeniable. The transformation in children's skills and attitudes is inspiring. They're a beacon of hope."</p>
+            </div>
+        
+            <div class="quote" id="eliana">
+                <div class="profile">
+                    <img src="testimonial-photos/eliana.png" alt = 'Eliana Headshot'>
+                    <h4> Eliana C </h4>
+                </div>
+                <p> "This nonprofit is an asset to our community. They understand the unique challenges minority children face and provide tailored support."</p>
+            </div>
+        
+            <div class="quote" id="javier">
+                <div class="profile">
+                    <img src="testimonial-photos/javier.jpeg" alt = 'Javier Headshot'>
+                    <h4> Javier P </h4>
+                </div>
+                <p> "My niece was struggling with basic skills, but Building Blocks worked wonders. She's now excelling in reading, writing, and math. They truly make a difference." </p>
+            </div>
+        
+            <div class="quote" id="james">
+                <div class="profile">
+                    <img src="testimonial-photos/james.png" alt = 'James Headshot'>
+                    <h4> James B </h4>
+                </div>
+                <p> "My son's self-esteem was suffering due to his academic struggles. Thanks to this nonprofit, he's not only improving academically but also gaining confidence. It's priceless."</p>
+            </div>
+        
+            <div class="quote" id="ana">
+                <div class="profile">
+                    <img src="testimonial-photos/ana.png" alt = 'Ana Headshot'>
+                    <h4> Ana R </h4>
+                </div>
+                <p> "This organization is a lifeline for single parents like me. My son's progress in reading, writing, and math is remarkable, and it's all thanks to them."</p>
+            </div>
+        
+            <div class="quote" id="raphael">
+                <div class="profile">
+                    <img src="testimonial-photos/raphael.jpeg" alt = 'Raphael Headshot'>
+                    <h4> Raphael B </h4>
+                </div>
+                <p> "I volunteered here and saw kids go from struggling to thriving in reading, writing, and math. It's heartwarming."</p>
+            </div>
+        
+            <div class="quote" id="natalia">
+                <div class="profile">
+                    <img src="testimonial-photos/natalia.png" alt = 'Natalia Headshot'>
+                    <h4> Natalia M </h4>
+                </div>
+                <p> "My daughter's progress is astonishing after attending this program. She now believes in her own potential."</p>
+            </div>
+        </section>
+        </main>
+
+        <div>
+
+        </div>
+
+        <footer>
+            <div id = 'f1'>
+                <a href="https://www.facebook.com/"><img class = 'icon' src= "images/fbb.png" alt = 'facebook'></a>
+                <a href="https://www.instagram.com/"><img class = 'icon' src= "images/igp.png" alt = 'instagram'></a>
+                <a href="https://twitter.com/"><img class = 'icon' src= "images/xg.png" alt = 'twitter'></a>
+                <a href="https://www.youtube.com/"><img class = 'icon' src= "images/ytp.png" alt = 'youtube'></a>
+            </div>
+            <div id = 'f2'>
+                <p id = 'c1'>#1(800)-BlocksEdu</p> <p id = 'c2'>BuildingBlocksEdu@gmail.com</p>
+            </div>
+            <div id = 'f3'>
+                <p>©2023 Building Blocks Educational Foundation. All Rights Reserved.</p>
+            </div>
+        </footer>
+
+    <script src="testimonial.js"></script>
+
 </body>
 </html>

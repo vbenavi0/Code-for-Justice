@@ -1,92 +1,174 @@
 h1 {
     text-align: center;
-    padding: 60px; 
+    margin: 40px;
+    width: 80%;
+    border-bottom: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h2 {
     text-align: center;
-    padding: 40px;
+    margin: 40px;
+    width: 80%;
+    border-bottom: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .paragraphs {
     color: black;
-}
-/* 
-.grids {
-    display: flex;
-    flex-wrap: wrap;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    justify-items: center;
-    align-items: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
     padding: 10px;
-    gap: 10px; 
-}  */
+    border-radius: 5px;
+    background-color: #AEDEA4;
+}
 
 .container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-     /* flex-wrap: wrap; */
     height: 20%;
 }
+
 .box1 {
     justify-content: center;
     text-align: center;
-    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
+    padding: 2px;
 }
 
 .container2 {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     height: 20%;
-    /* margin-right: 303.5px; */
  
 }
 
-.container2 .box {
+.box2 {
     align-self: center;
-    margin-top: 50px;
-
+    margin-top: 20px;
+    padding: 2px;
 }
-/* 
-.container2 .box2 {
-    align-self: center;
-} */
 
-/* for the container look up flex wrap and playing with and height */
-
-
-/* .grid {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 5;
-    text-align: center;
-} */
-
-img {
-    max-width: 35%;
+.container img{
+    width: 250px;
     height: auto;
-
+    border-radius: 5px;
 }
 
+.container2 img{
+    width: 250px;
+    height: auto;
+    border-radius: 5px;
+}
 
-@media (min-width: 600px;) {
+#box1{
+    background-color: #F3B6C6;
+    border-radius: 5px;
+}
 
+#box2{
+    background-color: #DBBAFC;
+    border-radius: 5px;
+}
+
+#box3{
+    background-color: #85CCEA;
+    border-radius: 5px;
+}
+
+#box4{
+    background-color: #AEDEA4;
+    border-radius: 5px;
+}
+
+#box5{
+    background-color: #F5D393;
+    border-radius: 5px;
+}
+
+@media screen and (max-width:1050px){ /* Resizing for phone screens */
+
+    .container img{
+        width: 150px;
+        height: auto;
+    
+    }
+    
+    .container2 img{
+        width: 150px;
+        height: auto;
+    
+    }
+
+    .box1 {
+        max-width: 150px;
+    }
+
+    .box2 {
+        max-width: 150px;
+    }
+}
+
+@media screen and (max-width:600px){ /* Resizing for phone screens */
+
+    .container img{
+        width: 100px;
+        height: auto;
+    
+    }
+    
+    .container2 img{
+        width: 100px;
+        height: auto;
+    
+    }
+
+    .box1 {
+        width: 100px;
+    }
+
+    .box2 {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width:400px){ /* Resizing for phone screens */
+
+    .container img{
+        width: 75px;
+        height: auto;
+    
+    }
+    
+    .container2 img{
+        width: 75px;
+        height: auto;
+    
+    }
+
+    .box1 {
+        width: 75px;
+    }
+
+    .box2 {
+        width: 75px;
+    }
 }
 
 

@@ -1,0 +1,372 @@
+/* Color Palette:  
+Light Green: #65fa72 
+Light Blue: #87e7f2
+Aqua: #78efbf
+*/
+
+/*Making a simply grid for the Picture Page*/
+.galleryheader1 {
+    position: absolute;
+    top: 10px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.galleryheader2 {
+    position: absolute;
+    top: 10px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section_picture {
+    margin-top: 125px;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* .carousel{
+    margin-top: 125px;
+} */
+
+.container_picture {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel img {
+    transition: filter 0.7s, object-fit 0.7s, opacity 0.7s;
+}
+
+.carousel img:hover {
+    filter: blur(15px);
+    object-fit: cover;
+    opacity: 0.4;
+    /* Adjust the value to control the amount of blurriness */
+}
+
+.arrow{
+    height: 50px;
+    width: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+}
+
+.hover-text1,
+.hover-text2,
+.hover-text3,
+.hover-text4 {
+    position: absolute;
+    top: 220px;
+    margin-left: 130px;
+    color: black;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+    z-index: -1;
+    width: 200px;
+    height: 50px;
+    margin-left: 80px;
+
+}
+
+.hover-text5,
+.hover-text6,
+.hover-text7,
+.hover-text8 {
+    position: absolute;
+    bottom: 330px;
+    /* margin-left: 140px; */
+    color: black;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    width: 200px;
+    height: 50px;
+    margin-left: 80px;
+    margin-bottom: 50px;
+    z-index: -1;
+}
+
+.hover-text9,
+.hover-text10,
+.hover-text11,
+.hover-text12 {
+    position: absolute;
+    bottom: 80px;
+    color: black;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    width: 200px;
+    height: 50px;
+    margin-left: 80px;
+    margin-bottom: 50px;
+    z-index: -1;
+}
+
+.hover-text13,
+.hover-text14,
+.hover-text15,
+.hover-text16 {
+    position: absolute;
+    top: 220px;
+    margin-left: 130px;
+    color: black;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+    z-index: -1;
+    width: 200px;
+    height: 50px;
+    margin-left: 80px;
+
+}
+
+.hover-text17,
+.hover-text18,
+.hover-text19,
+.hover-text20 {
+    position: absolute;
+    bottom: 330px;
+    /* margin-left: 140px; */
+    color: black;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    width: 200px;
+    height: 50px;
+    margin-left: 80px;
+    margin-bottom: 50px;
+    z-index: -1;
+}
+
+.hover-text21,
+.hover-text22,
+.hover-text23,
+.hover-text24 {
+    position: absolute;
+    bottom: 80px;
+    color: black;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    width: 200px;
+    height: 50px;
+    margin-left: 80px;
+    margin-bottom: 50px;
+    z-index: -1;
+}
+
+[class^="card"]:hover [class^="hover-text"] {
+    opacity: 1;
+}
+
+[class^="card"]{
+    max-width: 350px;
+    max-height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+[class^="card"] img{
+    width: 350px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.section_picture2 {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 125px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container_picture2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.carousel {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.carousel input[type="radio"] {
+    display: none;
+}
+
+.carousel-label1:hover img,
+.carousel-label2:hover img {
+    /* Remove the hover effect styles */
+    filter: none;
+    object-fit: unset;
+    opacity: 1;
+}
+
+
+.gallery {
+    width: 100%;
+    height: 100%;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#gallery1{
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#gallery2{
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Which either gallery is checked the subsequent gallery will become visible  */
+#gallery1:checked~.gallery1,
+#gallery2:checked~.gallery2 {
+    display: block;
+    opacity: 1;
+}
+
+
+.carousel-label1,
+.carousel-label2 {
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+}
+
+.carousel-label1 img {
+    position: relative;
+    z-index: 2;
+}
+
+.carousel-button {
+    display: none;
+}
+
+.button1 {
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    /* position: absolute;
+    bottom: 350px;
+    left: 200px; */
+}
+
+.button2 {
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    /* position: absolute;
+    bottom: 350px;
+    right: 200px; */
+}
+
+.quote-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+}
+
+.quote {
+    width: 75%;
+    height: auto;
+    font-size: 23px;
+    font-weight: 200;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (max-width: 1600px) {
+
+    .container_picture,
+    .container_picture2 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    .container_picture,
+    .container_picture2 {
+        width: 300px;
+        height: auto;
+        grid-template-columns: repeat(1, 1fr);
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    [class^="card"] img{
+        width: 250px;
+        height: 175px;
+    }
+
+    .galleryheader1 {
+        width: 80%;
+    }
+    
+    .galleryheader2 {
+        width: 80%;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .container_picture,
+    .container_picture2 {
+        width: 200px;
+        height: auto;
+        grid-template-columns: repeat(1, 1fr);
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    [class^="card"] img{
+        width: 200px;
+        height: 150px;
+    }
+
+    .galleryheader1 {
+        width: 100%;
+    }
+    
+    .galleryheader2 {
+        width: 100%;
+    }
+
+}

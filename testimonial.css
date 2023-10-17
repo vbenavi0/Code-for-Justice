@@ -1,0 +1,207 @@
+body{
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+    width: 75%;
+    border-bottom: 2px solid black;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    margin: 50px 0 50px 0;
+    background-color: #D3FAFF;
+}
+
+.carousel img {
+    width: 800px;
+    height: 300px;
+    object-fit: cover;
+    display:none;
+    border-radius: 20px;
+}
+
+button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.carousel-button {
+    position: relative;
+    background: none;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 0px;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: .25rem;
+    padding: 5px 10px;
+    color:white;
+    background-color: rgba(243, 182, 198, 0.5);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.carousel-button:hover{
+    color: black;
+    background-color: rgba(243, 182, 198, 1);
+}
+
+#prevbutton {
+    left: 1rem;
+}
+
+#nextbutton{
+    right: 1rem;
+}
+
+/* grid styling */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+    gap: 20px;
+    height: auto;
+    width: 90%;
+    text-align: center;
+    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1500px;
+}
+
+.quote{
+    display: flex;
+    max-width: 300px;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.quote img{
+    height: 70px;
+    width:70px;
+    border-radius: 50%;
+}
+
+.quote p, .quote h4{
+    padding: 0px 20px 0px;
+}
+
+#lisa h4, #natalia h4{
+    color:rgba(243, 182, 198, 1) ;
+}
+
+#lisa, #natalia {
+    box-shadow: 0px 4px 6px 4px rgba(243, 182, 198, 0.7);
+}
+
+#kevin h4, #raphael h4{
+    color: rgba(245, 211, 147, 1);
+}
+
+#kevin, #raphael{
+    box-shadow: 0 4px 6px 4px rgba(245, 211, 147, 0.7);
+}
+
+#eliana h4, #ana h4{
+    color: rgba(174, 222, 164, 1);
+}
+
+#eliana, #ana{
+    box-shadow: 0 4px 6px 4px rgba(174, 222, 164, 0.7);
+}
+
+#james h4, #javier h4{
+    color: rgba(219, 186, 252, 1);
+}
+
+#james, #javier{
+    box-shadow: 0 4px 6px 4px rgba(219, 186, 252, 0.7);
+}
+
+footer{
+    bottom: 0;
+}
+
+@media screen and (max-width:1050px){ /* Resizing for tablet screens */
+    
+    .carousel img {
+        width: 600px;
+        height: 225px;
+    }
+    .carousel-button {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:800px){ /* Resizing for tablet screens */
+    
+    .carousel img {
+        width: 400px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width:600px){ /* Resizing for tablet screens */
+    
+    .carousel img {
+        width: 400px;
+        height: 150px;
+    }
+    .carousel-button {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:550px){ /* Resizing for tablet screens */
+    
+    .carousel img {
+        width: 240px;
+        height: 90px;
+    }
+
+    .quote{
+        width: 200px;
+    }
+}
+
+
+/*  Pink : #F3B6C6 rgba(243, 182, 198, 1)
+    Blue : #85CCEA rgba(133, 204, 234, 1)
+    Yellow : #F5D393 rgba(245, 211, 147, 1)
+    Green : #AEDEA4 rgba(174, 222, 164, 1)
+    Purple : #DBBAFC rgba(219, 186, 252, 1) */
