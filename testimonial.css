@@ -1,6 +1,13 @@
 body{
     padding: 0;
     margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+    width: 75%;
+    border-bottom: 2px solid black;
 }
 
 .content{
@@ -8,18 +15,23 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .carousel-container {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .carousel {
     display: flex;
     overflow: hidden;
-    margin: 100px 0 50px 0;
+    margin: 50px 0 50px 0;
+    background-color: #D3FAFF;
 }
 
 .carousel img {
@@ -28,7 +40,6 @@ body{
     object-fit: cover;
     display:none;
     border-radius: 20px;
-    box-shadow: 0px 4px 6px 4px rgba(255, 255, 255, 0.7);
 }
 
 button {
@@ -41,18 +52,20 @@ button {
     background: none;
     border: none;
     padding: 10px;
-    margin: 25px;
+    margin: 10px;
+    margin-top: 0px;
     font-size: 30px;
     cursor: pointer;
     border-radius: .25rem;
     padding: 5px 10px;
     color:white;
     background-color: rgba(243, 182, 198, 0.5);
+    font-family: 'Montserrat', sans-serif;
 }
 
 .carousel-button:hover{
     color: black;
-    background-color: (243, 182, 198, 1);
+    background-color: rgba(243, 182, 198, 1);
 }
 
 #prevbutton {
@@ -67,23 +80,29 @@ button {
 .grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 5%;
-    height: 500px;
+    grid-auto-rows: auto;
+    gap: 20px;
+    height: auto;
     width: 90%;
     text-align: center;
-    padding: 50px;
+    padding: 20px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1500px;
 }
 
 .quote{
     display: flex;
-    width: 300px;
+    max-width: 300px;
+    height: auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 10%;
     background-color: white;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .profile{
@@ -132,6 +151,52 @@ button {
 
 #james, #javier{
     box-shadow: 0 4px 6px 4px rgba(219, 186, 252, 0.7);
+}
+
+footer{
+    bottom: 0;
+}
+
+@media screen and (max-width:1050px){ /* Resizing for tablet screens */
+    
+    .carousel img {
+        width: 600px;
+        height: 225px;
+    }
+    .carousel-button {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:800px){ /* Resizing for tablet screens */
+    
+    .carousel img {
+        width: 400px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width:600px){ /* Resizing for tablet screens */
+    
+    .carousel img {
+        width: 400px;
+        height: 150px;
+    }
+    .carousel-button {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:550px){ /* Resizing for tablet screens */
+    
+    .carousel img {
+        width: 240px;
+        height: 90px;
+    }
+
+    .quote{
+        width: 200px;
+    }
 }
 
 

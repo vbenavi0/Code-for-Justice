@@ -2,11 +2,16 @@ html{
     background-color: #D3FAFF;
     justify-content: center;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'ABeeZee', sans-serif;
+    background-image: url(images/back.png);
+    background-position: center;
+    background-size: cover; 
     }
-    * {
-    font-family: 'Montserrat', sans-serif;
-}
+
+    h1{
+        font-size: 40px;
+        border-bottom: 2px solid black;
+    }
     
     .logoBar{
     display: flex;
@@ -42,7 +47,6 @@ html{
     width: 15%;
     height: auto;
     padding: 10px;
-    /* border: 2px solid black; */
     border-radius: 5px;
     margin: 5px;
     justify-content: center;
@@ -94,12 +98,10 @@ html{
     
     footer{
     position: relative;
-    /* background-color: #AEDEA4; */
     width: 80%;
     height: auto;
     justify-content: center;
     border-radius: 5px;
-    /* border: 2px solid black; */
     padding: 2px;
     margin-left: auto;
     margin-right: auto;
@@ -152,7 +154,6 @@ html{
             max-width: 20%;
             height: auto;
             padding: 10px;
-            /* border: 2px solid black; */
             border-radius: 5px;
             margin: 2px;
             justify-content: center;
