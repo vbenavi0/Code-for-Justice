@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>About Us</title>
     <link href="style.css" rel="stylesheet" type="text/css"/>
     <link href="about.css" rel="stylesheet" type="text/css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,15 +14,15 @@
 <body>
     <script src="script.js"></script>
     <header class= "logoBar">
-      <img id = 'logo' src = images/logo1.png alt = 'logo'>
-    </header>
-    <nav class = 'navbar'>
+      <img id = 'logo' src = 'images/logo1.png' alt = 'logo'>
+  </header>
+  <nav class = 'navbar'>
       <a id = 'nav1' href="index.html">Home</a>
       <a id = 'nav2' href="about.html">About Us</a>
-      <a id = 'nav3' href="pictures.html">Pictures</a>
+      <a id = 'nav3' href="pictures.html">Gallery</a>
       <a id = 'nav4' href="testimonial.html">Testimonial</a>
       <a id = 'nav5' href="contact.html">Contact</a>
-    </nav>
+  </nav>
 
 <h1>About Us</h1>
 
@@ -39,33 +39,34 @@
 <h2>Our Team</h2>   
 <!-- changed class from grids to container -->
   <div class="container">
-      <div class="box1">
-        <img src="about us pictures/feliciaheadshot.jpeg">
+      <div class="box1" id = 'box1'>
+        <img src="about us pictures/feliciaheadshot.jpeg" alt = 'Felicia Brown Headshot'>
         <p>Felicia Brown</p>
         <p>Chief Marketing Officer</p>
       </div> 
 
-      <div class="box1">
-        <img src="about us pictures/victorheadshot.jpeg">
+      <div class="box1" id = 'box2'>
+        <img src="about us pictures/tecamheadshot.jpeg" alt = 'Tecambra Robinson Headshot'>
+        <p>Tecambra Robinson</p>
+        <p>Chief Technology Officer</p>
+      </div> 
+
+      <div class="box1" id = 'box3'>
+        <img src="about us pictures/victorheadshot.jpeg" alt = 'Victor Benavides Headshot'>
         <p>Victor Benavides</p>
         <p>Chief Finacial Officer</p>
       </div> 
       
-      <div class="box1">
-        <img src="about us pictures/tecamheadshot.jpeg">
-        <p>Tecambra Robinson</p>
-        <p>Chief Technology Officer</p>
-      </div> 
     </div>  
     <div class="container2">
-      <div class="box">
-        <img src="about us pictures/benjiheadshot.jpeg">
+      <div class="box2" id = 'box4'>
+        <img src="about us pictures/benjiheadshot.jpeg" alt = 'Benji Bennett Headshot'>
         <p>Benji Bennett</p>
         <p>Chief Executive Officer</p>
       </div> 
 
-      <div class="box">
-         <img src="about us pictures/hassanheadshot1.jpeg">
+      <div class="box2" id = 'box5'>
+         <img src="about us pictures/hassanheadshot1.jpeg" alt = 'Hassan Niang Headshot'>
          <p>Hassan Niang</p>
          <p>Chief Opperating Officer</p>
       </div>
@@ -73,10 +74,18 @@
   </div>
 
   <footer>
-    <a href="https://www.facebook.com/"><img class = 'icon' src= "images/fb.png" alt = 'facebook'></a>
-    <a href="https://www.instagram.com/"><img class = 'icon' src= "images/ig.png" alt = 'instagram'></a>
-    <a href="https://twitter.com/"><img class = 'icon' src= "images/x.png" alt = 'twitter'></a>
-    <a href="https://www.youtube.com/"><img class = 'icon' src= "images/yt.png" alt = 'youtube'></a>
-  </footer>
+    <div id = 'f1'>
+        <a href="https://www.facebook.com/"><img class = 'icon' src= "images/fbb.png" alt = 'facebook'></a>
+        <a href="https://www.instagram.com/"><img class = 'icon' src= "images/igp.png" alt = 'instagram'></a>
+        <a href="https://twitter.com/"><img class = 'icon' src= "images/xg.png" alt = 'twitter'></a>
+        <a href="https://www.youtube.com/"><img class = 'icon' src= "images/ytp.png" alt = 'youtube'></a>
+    </div>
+    <div id = 'f2'>
+        <p id = 'c1'>#1(800)-BlocksEdu</p> <p id = 'c2'>BuildingBlocksEdu@gmail.com</p>
+    </div>
+    <div id = 'f3'>
+        <p>©2023 Building Blocks Educational Foundation. All Rights Reserved.</p>
+    </div>
+</footer>
 </body>
 </html>
