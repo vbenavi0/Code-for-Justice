@@ -24,8 +24,8 @@ Our Team decided to make a website for a Non-Profit Organization that Focuses on
 
 ## Authors
 
-Victor Benavides
-Benji Bennett
-Felicia Brown
-Hassan Niang
-Tecambra Robinson
+* Benji Bennett
+* Felicia Brown
+* Hassan Niang
+* Tecambra Robinson
+* Victor Benavides
